@@ -2,9 +2,7 @@
 
 (defn aplica-desconto?
   [valor]
-  ( if (> valor 100)
-    true
-    false))
+  (> valor 100))
 
 (defn calcula-desconto
   "Realiza um cálculo de desconto de 10%"
@@ -12,10 +10,12 @@
   (if (aplica-desconto? valor-bruto)
     (let [taxa-desconto (/ 10.0 100.0)
           desconto (* valor-bruto taxa-desconto)]
-        (- valor-bruto desconto))
-                       valor-bruto))
+      (- valor-bruto desconto))
+    valor-bruto))
 
 
 (aplica-desconto? 101)
+(aplica-desconto? 99)
 
+(calcula-desconto 100)
 (calcula-desconto 101)
