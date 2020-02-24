@@ -21,5 +21,6 @@
 ; Usando função anonima
 (calcula-desconto (fn [valor] (> valor 100)) 100)
 (calcula-desconto (fn [valor] (> valor 100)) 101)
+; '#' para definir função, '%1' = primeiro parametro
 (calcula-desconto #(> %1 100) 100)
 (calcula-desconto #(> %1 100) 101)
