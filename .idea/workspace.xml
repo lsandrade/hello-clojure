@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9fd6d81-a36e-4cee-a85f-1b8e3d3add22" name="Default Changelist" comment="" />
+    <list default="true" id="c9fd6d81-a36e-4cee-a85f-1b8e3d3add22" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hello_clojure/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/hello_clojure/core.clj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +25,11 @@
     <expand />
     <select />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YGL1daLLHAo5HYTqKj1eGIb0RV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,6 +37,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -38,7 +47,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="ReplState" timestamp="1582564561888">{:repl-history {:ide [], :local [], :remote []}}</component>
+  <component name="ReplState" timestamp="1582565480402">{:repl-history {:ide [], :local [{:command &quot;(println \&quot;dsadsa\&quot;)&quot;, :offset 18, :ns &quot;hello-clojure.core&quot;} {:command &quot;(defn foo\n  \&quot;I don't do a whole lot.\&quot;\n  [x]\n  (println x \&quot;Hello, World!\&quot;))&quot;, :offset 74, :ns &quot;hello-clojure.core&quot;} {:command &quot;(println \&quot;Hello, World!\&quot;)&quot;, :offset 25, :ns &quot;hello-clojure.core&quot;} {:command &quot;(foo \&quot;Mario\&quot;)&quot;, :offset 13, :ns &quot;hello-clojure.core&quot;} {:command &quot;(calcula-desconto 100)&quot;, :offset 22, :ns &quot;hello-clojure.core&quot;}], :remote []}}</component>
   <component name="RunManager">
     <configuration name="REPL for hello-clojure" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
       <module name="hello-clojure" />
@@ -101,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582563770505</updated>
-      <workItem from="1582563772974" duration="783000" />
+      <workItem from="1582563772974" duration="1536000" />
     </task>
     <servers />
   </component>
@@ -113,38 +122,38 @@
       <screen x="0" y="23" width="1680" height="948" />
     </state>
     <state x="304" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.948@0.23.1680.948" timestamp="1582564162727" />
-    <state width="1638" height="314" key="GridCell.Tab.0.bottom" timestamp="1582564615310">
+    <state width="1638" height="314" key="GridCell.Tab.0.bottom" timestamp="1582565458893">
       <screen x="0" y="23" width="1680" height="948" />
     </state>
-    <state width="1638" height="314" key="GridCell.Tab.0.bottom/0.23.1680.948@0.23.1680.948" timestamp="1582564615310" />
-    <state width="1638" height="314" key="GridCell.Tab.0.center" timestamp="1582564615309">
+    <state width="1638" height="314" key="GridCell.Tab.0.bottom/0.23.1680.948@0.23.1680.948" timestamp="1582565458893" />
+    <state width="1638" height="314" key="GridCell.Tab.0.center" timestamp="1582565458892">
       <screen x="0" y="23" width="1680" height="948" />
     </state>
-    <state width="1638" height="314" key="GridCell.Tab.0.center/0.23.1680.948@0.23.1680.948" timestamp="1582564615309" />
-    <state width="1638" height="314" key="GridCell.Tab.0.left" timestamp="1582564615308">
+    <state width="1638" height="314" key="GridCell.Tab.0.center/0.23.1680.948@0.23.1680.948" timestamp="1582565458892" />
+    <state width="1638" height="314" key="GridCell.Tab.0.left" timestamp="1582565458892">
       <screen x="0" y="23" width="1680" height="948" />
     </state>
-    <state width="1638" height="314" key="GridCell.Tab.0.left/0.23.1680.948@0.23.1680.948" timestamp="1582564615308" />
-    <state width="1638" height="314" key="GridCell.Tab.0.right" timestamp="1582564615309">
+    <state width="1638" height="314" key="GridCell.Tab.0.left/0.23.1680.948@0.23.1680.948" timestamp="1582565458892" />
+    <state width="1638" height="314" key="GridCell.Tab.0.right" timestamp="1582565458892">
       <screen x="0" y="23" width="1680" height="948" />
     </state>
-    <state width="1638" height="314" key="GridCell.Tab.0.right/0.23.1680.948@0.23.1680.948" timestamp="1582564615309" />
-    <state width="1638" height="314" key="GridCell.Tab.1.bottom" timestamp="1582564615312">
+    <state width="1638" height="314" key="GridCell.Tab.0.right/0.23.1680.948@0.23.1680.948" timestamp="1582565458892" />
+    <state width="1638" height="314" key="GridCell.Tab.1.bottom" timestamp="1582565458894">
       <screen x="0" y="23" width="1680" height="948" />
     </state>
-    <state width="1638" height="314" key="GridCell.Tab.1.bottom/0.23.1680.948@0.23.1680.948" timestamp="1582564615312" />
-    <state width="1638" height="314" key="GridCell.Tab.1.center" timestamp="1582564615311">
+    <state width="1638" height="314" key="GridCell.Tab.1.bottom/0.23.1680.948@0.23.1680.948" timestamp="1582565458894" />
+    <state width="1638" height="314" key="GridCell.Tab.1.center" timestamp="1582565458894">
       <screen x="0" y="23" width="1680" height="948" />
     </state>
-    <state width="1638" height="314" key="GridCell.Tab.1.center/0.23.1680.948@0.23.1680.948" timestamp="1582564615311" />
-    <state width="1638" height="314" key="GridCell.Tab.1.left" timestamp="1582564615311">
+    <state width="1638" height="314" key="GridCell.Tab.1.center/0.23.1680.948@0.23.1680.948" timestamp="1582565458894" />
+    <state width="1638" height="314" key="GridCell.Tab.1.left" timestamp="1582565458893">
       <screen x="0" y="23" width="1680" height="948" />
     </state>
-    <state width="1638" height="314" key="GridCell.Tab.1.left/0.23.1680.948@0.23.1680.948" timestamp="1582564615311" />
-    <state width="1638" height="314" key="GridCell.Tab.1.right" timestamp="1582564615312">
+    <state width="1638" height="314" key="GridCell.Tab.1.left/0.23.1680.948@0.23.1680.948" timestamp="1582565458893" />
+    <state width="1638" height="314" key="GridCell.Tab.1.right" timestamp="1582565458894">
       <screen x="0" y="23" width="1680" height="948" />
     </state>
-    <state width="1638" height="314" key="GridCell.Tab.1.right/0.23.1680.948@0.23.1680.948" timestamp="1582564615312" />
+    <state width="1638" height="314" key="GridCell.Tab.1.right/0.23.1680.948@0.23.1680.948" timestamp="1582565458894" />
     <state x="328" y="78" key="SettingsEditor" timestamp="1582564397924">
       <screen x="0" y="23" width="1680" height="948" />
     </state>

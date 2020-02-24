@@ -1,10 +1,8 @@
 (ns hello-clojure.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn calcula-desconto
+  "Realiza um cálculo de desconto simples"
+  [valor]
+  (* valor 0.9))
 
-
-
-(foo "Mario")
+(calcula-desconto 100)
