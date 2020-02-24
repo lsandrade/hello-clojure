@@ -1,18 +1,21 @@
 (ns hello-clojure.core)
 
-(defn calcula-desconto
-  "Realiza um cálculo de desconto de 10%"
-  [valor-bruto]
-  (let [taxa-desconto (/ 10 100)]
-  (let [valor-descontado (* valor-bruto taxa-desconto)]
-  (- valor-bruto valor-descontado))))
-
 (defn aplica-desconto?
   [valor]
   ( if (> valor 100)
-  true
-  false))
+    true
+    false))
+
+(defn calcula-desconto
+  "Realiza um cálculo de desconto de 10%"
+  [valor-bruto]
+  (if (aplica-desconto? valor-bruto)
+    (let [taxa-desconto (/ 10.0 100.0)
+          desconto (* valor-bruto taxa-desconto)]
+        (- valor-bruto desconto))
+                       valor-bruto))
+
 
 (aplica-desconto? 101)
 
-(calcula-desconto 100)
+(calcula-desconto 101)
