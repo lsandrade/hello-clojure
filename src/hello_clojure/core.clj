@@ -15,9 +15,10 @@
 (aplica-desconto? 101)
 (aplica-desconto? 99)
 
+(calcula-desconto aplica-desconto? 100)
+(calcula-desconto aplica-desconto? 101)
+
+; Usando função anonima
 (calcula-desconto (fn [valor] (> valor 100)) 100)
 (calcula-desconto (fn [valor] (> valor 100)) 101)
 
-; Usando função anonima
-(calcula-desconto aplica-desconto? 100)
-(calcula-desconto aplica-desconto? 101)
