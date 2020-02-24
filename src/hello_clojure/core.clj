@@ -1,8 +1,6 @@
 (ns hello-clojure.core)
 
-(defn aplica-desconto?
-  [valor]
-  (> valor 100))
+(defn aplica-desconto? [valor] (> valor 100))
 
 (defn calcula-desconto
   "Realiza um cálculo de desconto de 10% se deve aplicar"
@@ -17,5 +15,9 @@
 (aplica-desconto? 101)
 (aplica-desconto? 99)
 
+(calcula-desconto (fn [valor] (> valor 100)) 100)
+(calcula-desconto (fn [valor] (> valor 100)) 101)
+
+; Usando função anonima
 (calcula-desconto aplica-desconto? 100)
 (calcula-desconto aplica-desconto? 101)
