@@ -39,3 +39,6 @@
 
 ; imprime pares de 0 a 20
 (println (filter even? (range 20)))
+
+; filtra elementos para aplicat desconto
+(println (filter aplica-desconto? precos))
