@@ -47,3 +47,6 @@
 
 ; soma todos os precos
 (reduce + precos)
+
+(defn minha-soma [valor-1 valor-2] (+ valor-1 valor-2))
+(reduce minha-soma precos)
