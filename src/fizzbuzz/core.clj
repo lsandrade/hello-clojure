@@ -1,11 +1,16 @@
 (ns fizzbuzz.core)
 
+(defn divisivel-por? [divisor numero]
+  (= 0 (mod numero divisor)))
+
 (defn fizzbuzz [numero]
-  (if (= 0 (mod 3 numero))
-    (str "fizz")
-    (if (= 0 (mod 5 numero))
+  (if (and (divisivel-por? 3 numero) (divisivel-por? 5 numero))
+    (str "fizzbuzz")
+    (if (divisivel-por? 3 numero)
+      (str "fizz")
+      (if (divisivel-por? 5 numero)
       (str "buzz")
-      (str "fizzbuzz"))))
+      numero))))
 
 ; deve retornar fizz se numero for divisivel por 3
 (= (fizzbuzz 3) "fizz")
@@ -15,3 +20,6 @@
 
 ; deve retornar fizzbuzz se divisivel por 3 e 5
 (= (fizzbuzz 15) "fizzbuzz")
+
+; deve retornar o proprio numero se nao for divisivel por 3 ou 15
+(= (fizzbuzz 8) 8)
