@@ -42,3 +42,5 @@
 
 ; filtra elementos para aplicat desconto
 (println (filter aplica-desconto? precos))
+
+(println (map calcula-desconto-simples (filter aplica-desconto? precos)))
