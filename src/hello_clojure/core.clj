@@ -44,3 +44,6 @@
 (println (filter aplica-desconto? precos))
 
 (println (map calcula-desconto-simples (filter aplica-desconto? precos)))
+
+; soma todos os precos
+(reduce + precos)
