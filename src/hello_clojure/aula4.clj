@@ -13,3 +13,7 @@
 
 ; adiciona valor no final do vetor. Não modifica o vetor original
 (println (conj precos 500))
+
+; atualiza elemento no vetor
+(update precos 0 inc)
+(update precos 1 dec)
