@@ -23,3 +23,6 @@
 
 ; deve retornar o proprio numero se nao for divisivel por 3 ou 15
 (= (fizzbuzz 8) 8)
+
+; calcula fizzbuzz para numeros de 0 a 20
+(map fizzbuzz (range 20))
