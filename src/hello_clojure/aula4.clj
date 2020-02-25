@@ -10,3 +10,6 @@
 
 ; precos[7] = retorna nulo
 (println (get precos 7))
+
+; adiciona valor no final do vetor. Não modifica o vetor original
+(println (conj precos 500))
