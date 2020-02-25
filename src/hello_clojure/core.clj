@@ -35,4 +35,7 @@
 (calcula-desconto #(> %1 100) 101)
 
 ; calcula desconto para varios precos
-( println (map calcula-desconto-simples precos))
+(println (map calcula-desconto-simples precos))
+
+; imprime pares de 0 a 20
+(println (filter even? (range 20)))
