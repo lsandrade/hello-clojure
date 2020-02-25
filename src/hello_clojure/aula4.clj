@@ -17,3 +17,7 @@
 ; atualiza elemento no vetor
 (update precos 0 inc)
 (update precos 1 dec)
+
+(defn soma-1 [valor] (+ valor 1))
+
+(update precos 2 soma-1)

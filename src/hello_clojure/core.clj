@@ -11,6 +11,15 @@
       (- valor-bruto desconto))
     valor-bruto))
 
+(defn calcula-desconto-simples
+  "Realiza um cálculo de desconto de 10% se deve aplicar"
+  [valor-bruto]
+  (if (aplica-desconto? valor-bruto)
+    (let [taxa-desconto (/ 10.0 100.0)
+          desconto (* valor-bruto taxa-desconto)]
+      (- valor-bruto desconto))
+    valor-bruto))
+
 
 (aplica-desconto? 101)
 (aplica-desconto? 99)
@@ -24,3 +33,6 @@
 ; '#' para definir função, '%1' = primeiro parametro
 (calcula-desconto #(> %1 100) 100)
 (calcula-desconto #(> %1 100) 101)
+
+; calcula desconto para varios precos
+( println (map calcula-desconto-simples precos))
