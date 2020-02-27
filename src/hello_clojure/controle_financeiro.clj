@@ -41,3 +41,12 @@
 (filter (fn [transacao]
           (> (:valor transacao) 100))
         transacoes)
+
+; executa codigo na ordem que é lido (thread first)
+(-> (first transacoes)
+    (get-valor))
+
+; thread last - soma despesas
+(->> (filter despesa? transacoes)
+     (map get-valor)
+     (reduce +))
