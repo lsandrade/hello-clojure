@@ -31,3 +31,8 @@
 
 ; filtra para trazer apenas despesas
 (filter despesa? transacoes)
+
+(defn get-valor [transacao] (:valor transacao))
+
+; soma valores de despesas
+(= 59.0 (reduce + (map get-valor (filter despesa? transacoes))))
