@@ -22,3 +22,12 @@
                  {:valor 26.0 :tipo "despesa" :comentario "livro de clojure" :data "03/02/2020"}])
 
 (map resumo transacoes)
+
+(defn despesa? [transacao]
+  (= (:tipo transacao) "despesa"))
+
+(despesa? (get transacoes 0))
+(despesa? (get transacoes 1))
+
+; filtra para trazer apenas despesas
+(filter despesa? transacoes)
