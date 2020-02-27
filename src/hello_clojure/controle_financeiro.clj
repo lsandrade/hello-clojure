@@ -36,3 +36,8 @@
 
 ; soma valores de despesas
 (= 59.0 (reduce + (map get-valor (filter despesa? transacoes))))
+
+; traz transacoe com valor > 100
+(filter (fn [transacao]
+          (> (:valor transacao) 100))
+        transacoes)
