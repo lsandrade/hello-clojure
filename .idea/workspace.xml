@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9fd6d81-a36e-4cee-a85f-1b8e3d3add22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hello_clojure/controle_financeiro.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hello_clojure/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/hello_clojure/core.clj" afterDir="false" />
     </list>
@@ -25,6 +25,13 @@
     <expand />
     <select />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Clojure Namespace" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -40,6 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="cursive.last.file.extension./Users/luanandrade/Dev/hello-clojure/src" value="clj" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -47,7 +55,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="ReplState" timestamp="1582565480402">{:repl-history {:ide [], :local [{:command &quot;(println \&quot;dsadsa\&quot;)&quot;, :offset 18, :ns &quot;hello-clojure.core&quot;} {:command &quot;(defn foo\n  \&quot;I don't do a whole lot.\&quot;\n  [x]\n  (println x \&quot;Hello, World!\&quot;))&quot;, :offset 74, :ns &quot;hello-clojure.core&quot;} {:command &quot;(println \&quot;Hello, World!\&quot;)&quot;, :offset 25, :ns &quot;hello-clojure.core&quot;} {:command &quot;(foo \&quot;Mario\&quot;)&quot;, :offset 13, :ns &quot;hello-clojure.core&quot;} {:command &quot;(calcula-desconto 100)&quot;, :offset 22, :ns &quot;hello-clojure.core&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1582763936064">{:repl-history {:ide [], :local [{:command &quot;(println \&quot;dsadsa\&quot;)&quot;, :offset 18, :ns &quot;hello-clojure.core&quot;} {:command &quot;(defn foo\n  \&quot;I don't do a whole lot.\&quot;\n  [x]\n  (println x \&quot;Hello, World!\&quot;))&quot;, :offset 74, :ns &quot;hello-clojure.core&quot;} {:command &quot;(println \&quot;Hello, World!\&quot;)&quot;, :offset 25, :ns &quot;hello-clojure.core&quot;} {:command &quot;(foo \&quot;Mario\&quot;)&quot;, :offset 13, :ns &quot;hello-clojure.core&quot;} {:command &quot;(calcula-desconto 100)&quot;, :offset 22, :ns &quot;hello-clojure.core&quot;}], :remote []}}</component>
   <component name="RunManager">
     <configuration name="REPL for hello-clojure" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
       <module name="hello-clojure" />
