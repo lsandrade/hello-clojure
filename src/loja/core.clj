@@ -13,3 +13,16 @@
       (recur funcao (rest vetor)))))
 
 (meu-map println nomes)
+
+(defn conta
+
+  ([elementos]
+   (conta 0 elementos))
+  ([total-parcial elementos]
+
+  (if (seq elementos)
+    (recur (inc total-parcial) (next elementos))
+    total-parcial)))
+
+(conta 0 nomes)
+(conta nomes)
