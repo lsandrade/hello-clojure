@@ -24,5 +24,15 @@
     (recur (inc total-parcial) (next elementos))
     total-parcial)))
 
+(defn conta-loop
+  [elementos]
+  (loop [total-parcial 0
+         elementos-restantes elementos]
+  (if (seq elementos-restantes)
+    (recur (inc total-parcial) (next elementos-restantes))
+    total-parcial)))
+
 (conta 0 nomes)
 (conta nomes)
+
+(conta-loop nomes)
