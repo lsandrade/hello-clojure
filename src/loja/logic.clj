@@ -1,4 +1,5 @@
-(ns loja.logic)
+(ns loja.logic
+  (:require [loja.db :as db]))
 
 (defn total-do-item
   [[item-id detalhes]]
@@ -23,3 +24,16 @@
   [[usuario pedidos]]
   {:usuario-id usuario
    :total-pedidos (count pedidos)})
+
+
+(defn quantia-de-pedidos-e-gasto-total-por-usuario
+  [[usuario pedidos]]
+  {:usuario-id usuario
+   :total-de-pedidos (count pedidos)
+   :preco-total (conta-total-por-usuario pedidos)})
+
+
+(defn resumo-por-usuario [pedidos]
+  (->> pedidos
+       (group-by :usuario)
+       (map quantia-de-pedidos-e-gasto-total-por-usuario)))

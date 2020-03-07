@@ -53,7 +53,5 @@
      (map logic/conta-total-por-usuario)
      println)
 
-(->> (db/pedidos)
-     (group-by :usuario)
-     (map logic/total-gasto-por-usuario)
-     println)
+(println db/pedidos)
+(println logic/resumo-por-usuario (db/pedidos))
