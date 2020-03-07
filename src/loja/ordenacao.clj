@@ -7,6 +7,7 @@
 (defn resumo-ordenado-por-usuario
   [pedidos]
   (->> pedidos
+       l.logic/resumo-por-usuario
        (sort-by :preco)))
 
 (let [resumo (resumo-ordenado-por-usuario (db/pedidos))
