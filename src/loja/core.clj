@@ -7,9 +7,9 @@
 
 (defn meu-map
   [funcao vetor]
-  (if (not (= 0 (count vetor)))
+  (if (not (nil? (first vetor)))
     (do
       (funcao (first vetor))
-      (meu-map funcao (rest vetor)))))
+      (recur funcao (rest vetor)))))
 
 (meu-map println nomes)

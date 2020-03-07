@@ -1,5 +1,6 @@
 (ns hello-clojure.core
-  (:use hello-clojure.aula4))
+  (:use hello-clojure.aula4)
+  (:use loja.core))
 
 
 (defn aplica-desconto? [valor] (> valor 100))
