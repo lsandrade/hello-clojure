@@ -15,10 +15,10 @@
        (map total-do-pedido)
        (reduce +)))
 
-(defn total-gasto-por-usuario
-  [[usuario pedidos]]
-  {:usuario-id usuario
-   :total-gasto (conta-total-por-pedido pedidos)})
+;(defn total-gasto-por-usuario
+;  [[usuario pedidos]]
+;  {:usuario-id usuario
+;   :total-gasto (conta-total-por-pedido pedidos)})
 
 (defn conta-total-por-usuario
   [[usuario pedidos]]
@@ -30,10 +30,16 @@
   [[usuario pedidos]]
   {:usuario-id usuario
    :total-de-pedidos (count pedidos)
-   :preco-total (conta-total-por-usuario pedidos)})
+   :preco-total (conta-total-por-pedido pedidos)})
 
 
 (defn resumo-por-usuario [pedidos]
   (->> pedidos
        (group-by :usuario)
        (map quantia-de-pedidos-e-gasto-total-por-usuario)))
+
+(defn resumo-ordenado-por-usuario
+  [pedidos]
+  (->> pedidos
+       resumo-por-usuario
+       (sort-by :preco-total)))
